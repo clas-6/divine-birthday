@@ -1,6 +1,4 @@
-.letter-rose{background:#f7a5bb}.letter-postscript{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:16px;margin:18px 0 0}
 .ambient-slideshow:after{background:linear-gradient(180deg,rgba(19,13,22,.72),rgba(19,13,22,.82) 55%,rgba(19,13,22,.9))}.ambient-slideshow img.active{opacity:.3}
-@media(min-width:901px){.hanging-letter:nth-child(5){grid-column:2 / span 2;max-width:calc(50% - 11px);justify-self:center;margin-top:26px;transform:rotate(-4deg)}}
 
 /* The notes gently release from the clothesline only while their section is in view. */
 @media(min-width:561px){
@@ -8,12 +6,10 @@
   .letters-section .hanging-letter:nth-child(2){transform:translateY(-38px) rotate(4deg)}
   .letters-section .hanging-letter:nth-child(3){transform:translateY(-38px) rotate(-2deg)}
   .letters-section .hanging-letter:nth-child(4){transform:translateY(-38px) rotate(5deg)}
-  .letters-section .hanging-letter:nth-child(5){transform:translateY(-38px) rotate(-4deg)}
   .letters-section.is-reached .hanging-letter{clip-path:inset(0 0 0 0 round 3px);opacity:1;transform:translateY(0) rotate(-3deg)}
   .letters-section.is-reached .hanging-letter:nth-child(2){transform:translateY(32px) rotate(4deg)}
   .letters-section.is-reached .hanging-letter:nth-child(3){transform:translateY(5px) rotate(-2deg)}
   .letters-section.is-reached .hanging-letter:nth-child(4){transform:translateY(42px) rotate(5deg)}
-  .letters-section.is-reached .hanging-letter:nth-child(5){transform:translateY(26px) rotate(-4deg)}
   .letters-section.is-reached .hanging-letter.is-open{transform:translateY(0) rotate(0deg) scale(1.03)!important}
 }
 @media(max-width:560px){
