@@ -16,3 +16,12 @@ Thank you for being you, Divine. Thank you for your beautiful heart and for alwa
 
 Happy 20th birthday once again, my girl! Here’s to an amazing new chapter and many more beautiful years ahead. 🥂🎂✨ Love youuu! 🤍
 Mercy
+[11:51 am, 15/09/2026] Oyin: Happy birthday divine 
+Wishing u long life and prosperity 
+U have been a really good friend to me and I really appreciate ur time ur efforts ur empathy that u show towards ppl it shows ur a good person 
+Ur always happy and bubbly don’t let anyone ruin that for u because dats what makes u special and different 
+I pray this new day brings u more happiness and more money and more cgpa ijn 
+Enjoy ur day baby 
+I love u 😘 
+Muah 💋
+[11:51 am, 15/09/2026] Oyin: Favour

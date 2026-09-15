@@ -1,0 +1,2 @@
+.letter-rose{background:#f7a5bb}.letter-postscript{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:16px;margin:18px 0 0}
+@media(min-width:901px){.hanging-letter:nth-child(5){grid-column:2 / span 2;max-width:calc(50% - 11px);justify-self:center;margin-top:26px;transform:rotate(-4deg)}}
