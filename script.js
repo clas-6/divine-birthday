@@ -35,6 +35,15 @@ document.querySelectorAll('.photo-card').forEach((card) => {
   });
 });
 
+document.querySelectorAll('.read-letter').forEach((button) => {
+  button.addEventListener('click', () => {
+    const letter = button.closest('.hanging-letter');
+    const isOpen = letter.classList.toggle('is-open');
+    button.querySelector('span').textContent = isOpen ? '↙' : '↗';
+    button.firstChild.textContent = isOpen ? 'fold the note ' : 'read the full note ';
+  });
+});
+
 const closeLightbox = () => {
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
