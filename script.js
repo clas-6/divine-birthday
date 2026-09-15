@@ -1,5 +1,14 @@
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = lightbox.querySelector('img');
+const ambientSlides = document.querySelectorAll('.ambient-slideshow img');
+let ambientIndex = 0;
+if (ambientSlides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  window.setInterval(() => {
+    ambientSlides[ambientIndex].classList.remove('active');
+    ambientIndex = (ambientIndex + 1) % ambientSlides.length;
+    ambientSlides[ambientIndex].classList.add('active');
+  }, 6000);
+}
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

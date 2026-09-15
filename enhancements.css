@@ -1,4 +1,11 @@
 /* Scroll-driven polish: a little more space, depth, and glass around the memories. */
+.ambient-slideshow{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#130d16}
+.ambient-slideshow:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,13,22,.82),rgba(19,13,22,.9) 55%,rgba(19,13,22,.96));}
+.ambient-slideshow img{position:absolute;inset:-4%;width:108%;height:108%;object-fit:cover;opacity:0;filter:blur(16px) saturate(.8);transform:scale(1.08);transition:opacity 2.4s ease;}
+.ambient-slideshow img.active{opacity:.18}
+.topbar,main,footer{position:relative;z-index:1}
+.gallery-section{background:rgba(28,18,28,.84)}
+.letters-section{background:linear-gradient(180deg,rgba(19,13,22,.72),rgba(27,17,29,.86))}
 .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--pink);z-index:50;box-shadow:0 0 15px var(--pink)}
 .reveal{opacity:0;transform:translateY(42px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
 .reveal.is-visible{opacity:1;transform:translateY(0)}
@@ -51,3 +58,4 @@
   .video-meta{padding-left:5px;padding-right:5px}
   .section-note:after{content:"  swipe →";color:var(--pink);font-family:"DM Mono";font-size:10px;letter-spacing:.08em}
 }
+.letters-section{background:linear-gradient(180deg,rgba(19,13,22,.72),rgba(27,17,29,.86))}
