@@ -39,3 +39,15 @@
   .letter-full{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.parallax{transform:rotate(3deg)!important}}
+@media(max-width:560px){
+  .hanging-letters{display:flex;overflow-x:auto;gap:18px;padding:60px 7vw 24px;margin-left:-7vw;margin-right:-7vw;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .hanging-letters::-webkit-scrollbar,.video-grid::-webkit-scrollbar{display:none}
+  .hanging-letter,.hanging-letter:nth-child(n){flex:0 0 82vw;scroll-snap-align:center;margin-top:0;min-height:365px}
+  .hanging-letter.is-open{min-height:460px}
+  .video-grid{display:flex;overflow-x:auto;gap:16px;padding:0 5.5vw 22px;margin-left:-5.5vw;margin-right:-5.5vw;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .video-card,.video-feature{flex:0 0 82vw;scroll-snap-align:center}
+  .video-feature video{height:300px}
+  .video-card video{height:245px}
+  .video-meta{padding-left:5px;padding-right:5px}
+  .section-note:after{content:"  swipe →";color:var(--pink);font-family:"DM Mono";font-size:10px;letter-spacing:.08em}
+}
