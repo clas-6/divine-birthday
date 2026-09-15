@@ -11,13 +11,14 @@ document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe
 
 const progress = document.querySelector('.scroll-progress');
 const parallaxItems = document.querySelectorAll('.parallax');
+const mobileLayout = window.matchMedia('(max-width: 750px)');
 let scrollTicking = false;
 const updateScrollEffects = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   progress.style.width = `${scrollable ? (window.scrollY / scrollable) * 100 : 0}%`;
   parallaxItems.forEach((item) => {
     const speed = Number(item.dataset.speed || 0.1);
-    item.style.transform = `translateY(${window.scrollY * speed}px) rotate(3deg)`;
+    item.style.transform = mobileLayout.matches ? 'rotate(3deg)' : `translateY(${window.scrollY * speed}px) rotate(3deg)`;
   });
   scrollTicking = false;
 };
