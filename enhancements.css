@@ -1,0 +1,15 @@
+/* Scroll-driven polish: a little more space, depth, and glass around the memories. */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--pink);z-index:50;box-shadow:0 0 15px var(--pink)}
+.reveal{opacity:0;transform:translateY(42px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.hero-portrait{will-change:transform}
+.gallery-section,.reel-section,.letter-section{content-visibility:auto;contain-intrinsic-size:800px}
+.video-card{position:relative;padding:10px;border:1px solid rgba(255,255,255,.22);border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.035));box-shadow:0 22px 60px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.18);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);transition:transform .5s ease,box-shadow .5s ease,border-color .5s ease}
+.video-card:before{content:"";position:absolute;inset:-1px;border-radius:inherit;background:radial-gradient(circle at 15% 0,rgba(255,77,150,.26),transparent 35%);pointer-events:none}
+.video-card:hover{transform:translateY(-8px);border-color:rgba(255,77,150,.7);box-shadow:0 30px 75px rgba(0,0,0,.35),0 0 35px rgba(255,47,135,.12)}
+.video-card video{position:relative;border-radius:11px}
+.video-meta{padding:16px 6px 5px}
+.video-meta strong{font-family:"Playfair Display",Georgia,serif;font-size:17px;font-weight:600}
+.photo-card{border-radius:3px}
+.photo-card:nth-child(2){transition-delay:.08s}.photo-card:nth-child(3){transition-delay:.16s}.photo-card:nth-child(4){transition-delay:.24s}.photo-card:nth-child(5){transition-delay:.1s}.photo-card:nth-child(6){transition-delay:.18s}.photo-card:nth-child(7){transition-delay:.26s}
+@media(max-width:750px){.reveal{transform:translateY(25px)}.video-card{border-radius:14px}.video-card video{border-radius:8px}.video-meta strong{font-size:16px}}
