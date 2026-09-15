@@ -18,6 +18,14 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.14 });
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 
+const lettersSection = document.querySelector('.letters-section');
+if (lettersSection) {
+  const lettersObserver = new IntersectionObserver(([entry]) => {
+    lettersSection.classList.toggle('is-reached', entry.isIntersecting);
+  }, { threshold: 0.24 });
+  lettersObserver.observe(lettersSection);
+}
+
 const progress = document.querySelector('.scroll-progress');
 const parallaxItems = document.querySelectorAll('.parallax');
 const mobileLayout = window.matchMedia('(max-width: 750px)');
