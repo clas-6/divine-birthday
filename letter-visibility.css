@@ -1,0 +1,2 @@
+/* Safety fallback: the clothesline notes remain visible even if a browser blocks IntersectionObserver. */
+.letter-placeholder{clip-path:inset(0)!important;opacity:1!important}
